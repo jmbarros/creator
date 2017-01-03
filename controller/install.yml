@@ -6,5 +6,3 @@
     roles:
     - jmbarros.common
     - jmbarros.etcd
-  #- docker
-  #- glances
