@@ -24,12 +24,19 @@ def install_galaxy ( galaxy ):
    os.system(ig)
    return;
 
+def wget ( url ):
+   "function_docstring"
+   wg = "wget -O ./ " + url
+   os.system(wg)
+   return;
 ########################################################################
 
 yum_install( "epel-release" )
+yum_install( "wget" )
 yum_install( "ansible" )
 install_galaxy( "jmbarros.common")
 install_galaxy( "jmbarros.etcd")
-play_book ("install.yml")
+wget( "https://raw.githubusercontent.com/jmbarros/creator/master/controller/install.yml" )
+play_book ( "install.yml" )
 
 
