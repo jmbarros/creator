@@ -1,0 +1,10 @@
+---
+  - hosts: localhost
+    #connection: local
+    user: local
+  
+    roles:
+    - jmbarros.common
+    - etcd
+  #- docker
+  #- glances
