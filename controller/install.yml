@@ -1,10 +1,10 @@
 ---
   - hosts: localhost
-    #connection: local
+    connection: local
     user: local
   
     roles:
     - jmbarros.common
-    - etcd
+    - jmbarros.etcd
   #- docker
   #- glances

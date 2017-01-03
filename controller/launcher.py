@@ -5,21 +5,22 @@ import os
 
 #######################################################################
 #defs
+
 def yum_install ( pkg ):
    "function_docstring"
-   install = "yum install -y  "+ pkg
+   install = "yum install -y  " + pkg
    os.system(install)
    return;
 
 def play_book ( pb ):
    "function_docstring"
-   book = "ansible-playbook ./"+ pb
+   book = "ansible-playbook ./" + pb
    os.system(book)
    return;
 
 def install_galaxy ( galaxy ):
    "function_docstring"
-   ig = "ansible-galaxy install "+ galaxy
+   ig = "ansible-galaxy install " + galaxy
    os.system(ig)
    return;
 
